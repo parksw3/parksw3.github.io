@@ -1,0 +1,88 @@
+---
+layout: post
+title: "Testing R Markdown"
+---
+
+## Wallinga plot
+
+
+
+```r
+# Empirical distribution
+EmpiricalR <- function(tau, r, breaks){
+    h <- hist(tau, breaks = breaks, plot = FALSE)
+    a <- h$breaks
+    y <- h$counts/sum(h$counts)
+    return(r/(sum(y * -diff(exp(-a * r))/diff(a))))
+}
+
+EmpiricalCurve <- function(rr, tau, breaks){
+    sapply(rr, function(x){EmpiricalR(tau, x, breaks)})
+}
+
+fluGen <- data.frame(gen = c(1:11),
+                     freq = c(6, 8, 12, 14, 2, 1, 0, 2, 2, 1, 2))
+
+fluGen.freq <- as.vector(rep(fluGen$gen, fluGen$freq))
+h1 <- hist(fluGen.freq, breaks = c(0:11), plot = FALSE)
+
+fluGen.freq2 <- fluGen.freq[fluGen.freq < 7 & fluGen.freq > 1]
+h2 <- hist(fluGen.freq2, breaks = c(0:7), plot = FALSE)
+
+par(mfrow = c(2,1),
+    oma = c(0, 0, 0.5, 0),
+    mar = c(2.2, 3.5, 0.6, 0.5) + 0.1)
+
+plot(h1, freq = FALSE, col = "gray85", ylim = c(0, 0.4), xlim = c(0,15),
+     yaxp = c(0.05, 0.4, 7), xaxp = c(2, 16, 7), xaxs = "i", yaxs = "i", tck = 0.02,
+     xlab = NA,
+     ylab = "relative frequency",
+     main = NA,
+     family = "serif",
+     las = 1,
+     mgp = c(2.3,0.3,0))
+axis(1, at = c(6.5, 11.5, 12.5, 13, 13.5, 14.5), labels = NA, tck = 0.01)
+axis(1, at = c(0, 2), labels = NA, tck = 0)
+axis(2, at = c(0, 0.05), labels = NA, tck = 0)
+mtext(text = expression(generation~interval~italic(a)), side = 1, line = 1.7,
+      family = "serif")
+plot(h2, freq = FALSE, col = "gray30", add = TRUE)
+
+n <- length(fluGen.freq2)
+(m <- sum(fluGen.freq2 - 0.5)/n)
+```
+
+```
+## [1] 2.851351
+```
+
+```r
+# I think wallinga and lipsitch are using variance instead of sd??
+(var <- sum((fluGen.freq2 - 0.5 - m)^2)/n)
+```
+
+```
+## [1] 0.9306063
+```
+
+```r
+r <- seq(-1.1, 1.1, by = 0.005)
+
+plot(r, EmpiricalCurve(r, fluGen.freq2, breaks = c(0:7)), type = "l",
+     lwd = 1,
+     xlim = c(-1, 1), ylim = c(0, 11.2), axes = FALSE,
+     xlab = expression(growth~rate~italic(r)),
+     ylab = expression(reproductive~number~italic(R)),
+     family = "serif",
+     mgp = c(0.9, 0, 0))
+yaxis <- seq(0, 12, 0.5)
+yaxis <- yaxis[yaxis != 1]
+axis(2, at = yaxis, labels = FALSE, pos = 0, tck = 0.01)
+axis(2, at = c(2, 4, 6, 8, 10), pos = 0, tck = 0.02, las = 1,
+     mgp = c(0, 0.2, 0), family = "serif")
+axis(1, at = seq(-1.1, 1.1, by = 0.1), labels = FALSE, pos = 0, tck = 0.01)
+axis(1, at = c(-1.0, -0.5, 0, 0.5, 1.0), labels = c("-1.0", "-0.5", "0", "0.5", "1.0"), pos = 0, tck = 0.02,
+     mgp = c(0, 0.2, 0), family = "serif")
+```
+
+![plot of chunk wallinga](/figure/source/2016-09-23-testing-r-markdown/wallinga-1.png)
