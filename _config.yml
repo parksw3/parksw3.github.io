@@ -8,8 +8,8 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Hyde
-tagline:          'Needs a title'
+title:            Needs a title
+tagline:          'What is this?'
 description:      'A blog about random things.'
 url:              http://parksw3.github.io
 baseurl:          /
