@@ -19,33 +19,33 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 First, linearization of the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$ yields the following system:
 
 $$
-\frac{d}{dt} \begin{bmatrix}
+\frac{d}{dt} \begin{pmatrix}
 N_1\\
 N_2\\
 N_3\\
 N_4
-\end{bmatrix} = -\begin{bmatrix}
+\end{pmatrix} = -\begin{pmatrix}
 1 & \alpha & \beta & \gamma\\
 \gamma & 1 & \alpha & \beta\\
 \beta & \gamma & 1 & \alpha\\
 \alpha & \beta & \gamma & 1
-\end{bmatrix} \begin{bmatrix}
+\end{pmatrix} \begin{pmatrix}
 N_1\\
 N_2\\
 N_3\\
 N_4
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 In order for the equilibrium to be stable, all eigenvalues of the following matrix must have positive real parts:
 
 $$
-\begin{bmatrix}
+\begin{pmatrix}
 1 & \alpha & \beta & \gamma\\
 \gamma & 1 & \alpha & \beta\\
 \beta & \gamma & 1 & \alpha\\
 \alpha & \beta & \gamma & 1
-\end{bmatrix}
+\end{pmatrix}
 $$
 
 Since this matrix is [circulant](https://en.wikipedia.org/wiki/Circulant_matrix), we find that the it has the following eigenvalues:
