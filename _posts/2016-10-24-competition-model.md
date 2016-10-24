@@ -14,7 +14,47 @@ $$
 \end{aligned}
 $$
 
-While trying out different parameters, I noticed that this system exhibits a cyclic behaviour for parameters such that $\alpha + \gamma = 2$ and $\beta = 1$ but switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equation, it should have been obvious that I can't change the parameters around like that, but 
+While trying out different parameters, I noticed that this system exhibits a cyclic behaviour for parameters such that $\alpha + \gamma = 2$ and $\beta = 1$ but switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equations, it should have been obvious that I can't change the parameters around like that, but instead I went on to figure out what was going on.
 
+First, linearization of the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$ yields the following system:
 
+$$
+\frac{d}{dt} \begin{bamtrix}
+N_1\\
+N_2\\
+N_3\\
+N_4
+\end{bmatrix} = -\begin{bmatrix}
+1 & \alpha & \beta & \gamma\\
+\gamma & 1 & \alpha & \beta\\
+\beta & \gamma & 1 & \alpha\\
+\alpha & \beta & \gamma & 1
+\end{bmatrix} \begin{bamtrix}
+N_1\\
+N_2\\
+N_3\\
+N_4
+\end{bmatrix}
+$$
+
+In order for the equilibrium to be stable, all eigenvalues of the following matrix must have positive real parts:
+
+$$
+\begin{bmatrix}
+1 & \alpha & \beta & \gamma\\
+\gamma & 1 & \alpha & \beta\\
+\beta & \gamma & 1 & \alpha\\
+\alpha & \beta & \gamma & 1
+\end{bmatrix}
+$$
+
+Since this matrix is [circulant](https://en.wikipedia.org/wiki/Circulant_matrix), we find that the it has the following eigenvalues:
+
+$$
+\begin{cases}
+\lambda_1 = 1 + \alpha + \beta + \gamma \\
+\lambda_2 = 1 + \beta - (\alpha + \gamma) \\
+\lambda_{3,4} = (1 - \beta) \pm (\alpha - \gamma) i \\
+\end{cases}
+$$
 
