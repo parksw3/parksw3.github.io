@@ -14,7 +14,7 @@ $$
 \end{aligned}
 $$
 
-While trying out different parameters, I noticed that this system exhibits a cyclic behaviour for parameters such that $\alpha + \gamma = 2$ and $\beta = 1$ but switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equations, it should have been obvious that I can't change the parameters around like that, but instead I went on to figure out what was going on.
+While trying out different parameters, I noticed that this system exhibits a cyclic behaviour for parameters such that $\alpha + \gamma = 2$ and $\beta = 1$ but switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equations, it should have been obvious that I can't change the parameters around like that, but instead I went on to figure out what was going on following May and Leonard's approach.
 
 First, linearization of the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$ yields the following system:
 
@@ -58,3 +58,37 @@ $$
 \end{cases}
 $$
 
+Now, we see that setting $\beta = 1$ gives us purely imaginary eigenvalues, causing the cycle. What does $\alpha + \gamma = 2$ do, then?
+
+
+Define
+
+$$
+\begin{aligned}
+N_T &\equiv N_1 + N_2 + N_3 + N_4\\
+P_T &\equiv N_1 N_2 N_3 N_4
+\end{aligned}
+$$
+
+When $\alpha + \gamma = 2$, we get
+
+$$
+\begin{aligned}
+dN_T/dt &= N_T - N_T^2\\
+d[\ln P_T]/dt &= 4 d[\ln N_T]/dt
+\end{aligned}
+$$
+
+...
+
+It seems like $N_1$ and $N_3$ (or $N_2$ and $N_4$) have some relationship but I can't figure it out..
+
+$$
+\begin{aligned}
+d[\ln N_1 N_3]/dt &= 2 - 2(N_T)\\
+d[\ln N_1 N_3]/dt &= 2 d[\ln N_T]/dt\\
+\frac{N_1(t) N_3(t)}{N_1(0) N_3(0)} &= \left(\frac{N_T(t)}{N_0(t)}\right)^2 \\
+\end{aligned}
+$$
+
+This shows that $N_1$ and $N_3$ lie on hyperbola (so does $N_2, N_4$ pair).
