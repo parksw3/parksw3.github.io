@@ -19,7 +19,7 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 First, linearization of the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$ yields the following system:
 
 $$
-\frac{d}{dt} \begin{bamtrix}
+\frac{d}{dt} \begin{bmatrix}
 N_1\\
 N_2\\
 N_3\\
@@ -29,7 +29,7 @@ N_4
 \gamma & 1 & \alpha & \beta\\
 \beta & \gamma & 1 & \alpha\\
 \alpha & \beta & \gamma & 1
-\end{bmatrix} \begin{bamtrix}
+\end{bmatrix} \begin{bmatrix}
 N_1\\
 N_2\\
 N_3\\
