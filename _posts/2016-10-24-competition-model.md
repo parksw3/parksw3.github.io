@@ -60,35 +60,27 @@ $$
 
 Now, we see that setting $\beta = 1$ gives us purely imaginary eigenvalues, causing the cycle. What does $\alpha + \gamma = 2$ do, then?
 
-
-Define
-
-$$
-\begin{aligned}
-N_T &\equiv N_1 + N_2 + N_3 + N_4\\
-P_T &\equiv N_1 N_2 N_3 N_4
-\end{aligned}
-$$
-
-When $\alpha + \gamma = 2$, we get
+Similar to three species model, when $\alpha + \gamma = 2$, we get
 
 $$
 \begin{aligned}
-dN_T/dt &= N_T - N_T^2\\
-d[\ln P_T]/dt &= 4 d[\ln N_T]/dt
+dN_T/dt &= N_T - N_T^2,
 \end{aligned}
 $$
 
-...
-
-It seems like $N_1$ and $N_3$ (or $N_2$ and $N_4$) have some relationship but I can't figure it out..
+where $N_T \equiv N_1 + N_2 + N_3 + N_4$. Here's the interesting bit about this model: unlike three-competitors model, we can separate the system into $(N_1, N_3)$ pair and $(N_2, N_4)$ pair by defining
 
 $$
 \begin{aligned}
-d[\ln N_1 N_3]/dt &= 2 - 2(N_T)\\
-d[\ln N_1 N_3]/dt &= 2 d[\ln N_T]/dt\\
-\frac{N_1(t) N_3(t)}{N_1(0) N_3(0)} &= \left(\frac{N_T(t)}{N_0(t)}\right)^2 \\
+P_1 &\equiv N_1 N_3,\\
+P_2 &\equiv N_2 N_4.
 \end{aligned}
 $$
 
-This shows that $N_1$ and $N_3$ lie on hyperbola (so does $N_2, N_4$ pair).
+After some algebra, we get
+
+$$
+\frac{P_1(t)}{P_1(0)} = \frac{P_2(t)}{P_2(0)} = \left(\frac{N_T(t)}{N_T(0)} \right)^2,
+$$
+
+meaning that pairs $(N_1, N_3)$ and $(N_2, N_4)$ will each lie on the hyperbola after sufficient amount of time.
