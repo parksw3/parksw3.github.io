@@ -16,7 +16,7 @@ $$
 
 While trying out different parameters, I noticed that this system exhibits a cyclic behaviour that is slightly different from that of three-competitors model when $\alpha + \gamma = 2$ and $\beta = 1$:
 
-![Example](../figures/competitors/dynamics.png)
+{% include image name="dynamics.png" caption="A simulation" %}
 
 However, switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equations, it should have been obvious that I can't change the parameters around like that, but instead I went on to figure out what was going on.
 
