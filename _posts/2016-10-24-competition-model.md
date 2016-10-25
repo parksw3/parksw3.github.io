@@ -20,7 +20,7 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 
 The very first thing that I noticed was that $N_1$ and $N_3$ pair (and $N_2$ and $N_4$ pair) seemed to exhibit a relationship. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can get $N_1$ and $N_2$ (or $N_4$) to be related but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
 
-Before going into eigenvalues, let's start by looking at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, it we take the sum of all four states $N_T \equiv N_1 + N_2 + N_3 + N_4$, we get the following equation:
+Before going into eigenvalues, let's look at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, taking the sum of all four states, $N_T \equiv N_1 + N_2 + N_3 + N_4$, yields following equation:
 
 $$
 \begin{aligned}
@@ -28,7 +28,13 @@ dN_T/dt &= N_T - N_T^2,
 \end{aligned}
 $$
 
-Here's the interesting bit about this model: unlike three-competitors model, we can separate the system into $(N_1, N_3)$ pair and $(N_2, N_4)$ pair by defining
+If you read the paper that I linked above, this result shouldn't be surprising at all. All this tells us is that $N_T$ is, in fact, a [logistic equation](https://en.wikipedia.org/wiki/Logistic_function):
+
+$$
+\lim\limits_{t \to \infty} N_T = 1
+$$
+
+Now, here's the interesting bit about this model: unlike three-competitors model, we can actually separate the system into $(N_1, N_3)$ pair and $(N_2, N_4)$ pair by defining
 
 $$
 \begin{cases}
@@ -53,10 +59,7 @@ N_2 N_4 = c_2 = N_2 (0) N_4 (0)/N_T(0)^2
 $$
 
 
-
-
-
-
+# Rewrite this section:
 
 First, linearization of the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$ yields the following system:
 
