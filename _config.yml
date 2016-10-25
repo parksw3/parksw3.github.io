@@ -3,6 +3,9 @@ gems:             [jekyll-paginate]
 markdown:         kramdown
 highlighter:      rouge
 
+# Force UTF-8:
+encoding: UTF-8
+
 # Permalinks
 permalink:        pretty
 # relative_permalinks: true
