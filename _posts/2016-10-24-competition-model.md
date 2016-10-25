@@ -18,7 +18,7 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 
 ![fig1]({{ site.url }}/assets/2016-10-24-competition-model/dynamics.png)
 
-The very first thing that I noticed was that $N_1$ and $N_3$ pair (and $N_2$ and $N_4$ pair) seemed to exhibit a relationship. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can get $N_1$ and $N_2$ (or $N_4$) to be related but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
+The very first thing that I noticed was that $(N_1, N_3)$ pair (and $(N_2, N_4)$ pair) seemed to exhibit a relationship. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
 
 Before going into eigenvalues, let's look at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, taking the sum of all four states, $N_T \equiv N_1 + N_2 + N_3 + N_4$, yields following equation:
 
@@ -57,6 +57,8 @@ N_1 N_3 = c_1 = N_1 (0) N_3 (0)/N_T(0)^2\\
 N_2 N_4 = c_2 = N_2 (0) N_4 (0)/N_T(0)^2
 \end{cases}
 $$
+
+Indeed, you can see that the path of $(N_1, N_3)$ and $(N_2, N_4)$ pairs lie on hyperbola, $f(x) = c/x$, where $c$ is determined by the initial values.
 
 ![fig2]({{ site.url }}/assets/2016-10-24-competition-model/phase.png)
 
