@@ -3,7 +3,7 @@ layout: post
 title: "Competition model"
 ---
 
-For Math 3MB3, introduction to modelling course, my group has to study [three-competitors model](http://epubs.siam.org/doi/abs/10.1137/0129022), and I really didn't feel like studying for midterms so I decided to play around with the model a bit. I was especially interested in the cyclic behaviour of the model so I wanted to see if it could be found in $n$-competitor model as well, where $n > 3$. Naturally, the first thing I did was to work with the next simplest case, $n = 4$:
+For Math 3MB3, introduction to modelling course, my group has to study [three-competitors model](http://epubs.siam.org/doi/abs/10.1137/0129022), and I really didn't feel like studying for midterms so I decided to play around with the model a bit last weekend. I was especially interested in the cyclic behaviour of the model so I wanted to see if it could be found in $n$-competitor model as well, where $n > 3$. Naturally, the first thing I did was to work with the next simplest case, $n = 4$:
 
 $$
 \begin{aligned}
@@ -16,11 +16,11 @@ $$
 
 While trying out different parameters, I noticed that this system exhibits a cyclic behaviour that is slightly different from that of three-competitors model when $\alpha + \gamma = 2$ and $\beta = 1$:
 
-{% include image name="dynamics.png" caption="I don't think caption works.. does it?" %}
+{% include image name="dynamics.png" caption="" %}
 
-However, switching $\beta$ with $\alpha$ (or with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ would not work. Looking at the equations, it should have been obvious that I can't change the parameters around like that, but instead I went on to figure out what was going on.
+The very first thing that I noticed was that $N_1$ and $N_3$ pair (and $N_2$ and $N_4$ pair) seemed to exhibit a relationship. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can get $N_1$ and $N_2$ (or $N_4$) to be related but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
 
-Before going into eigenvalues, let's start by looking at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, we look at the sum of all four states $N_T \equiv N_1 + N_2 + N_3 + N_4$:
+Before going into eigenvalues, let's start by looking at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, it we take the sum of all four states $N_T \equiv N_1 + N_2 + N_3 + N_4$, we get the following equation:
 
 $$
 \begin{aligned}
