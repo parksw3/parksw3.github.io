@@ -58,6 +58,7 @@ N_2 N_4 = c_2 = N_2 (0) N_4 (0)/N_T(0)^2
 \end{cases}
 $$
 
+![]({{ site.url }}/assets/2016-10-24-competition-model/phase.png)
 
 # Rewrite this section:
 
