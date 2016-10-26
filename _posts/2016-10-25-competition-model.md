@@ -18,7 +18,7 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 
 ![Figure 1]({{ site.url }}/assets/2016-10-25-competition-model/dynamics.png)
 
-What's particular about this cycle is that $N_1$ and $N_3$ seem to be paired (and so do $N_2$ and $N_4$). I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I couldn't get it to work. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
+What's particular about this cycle is that $N_1$ and $N_3$ seem to be paired (and so do $N_2$ and $N_4$). I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \gamma = 2$ and $\alpha = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I couldn't get it to work. Looking at the equations, I should have realized that it can't work, but instead I went on to figure out what was going on.
 
 Before we talk about eigenvalues, let's look at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, taking the sum of all four states, $N_T \equiv N_1 + N_2 + N_3 + N_4$, yields following equation:
 
