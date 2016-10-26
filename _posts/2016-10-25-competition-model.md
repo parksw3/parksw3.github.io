@@ -16,7 +16,7 @@ $$
 
 While trying out different parameters, I noticed that this system exhibits a cyclic behaviour that is slightly different from that of three-competitors model when $\alpha + \gamma = 2$ and $\beta = 1$:
 
-![fig1]({{ site.url }}/assets/2016-10-24-competition-model/dynamics.png)
+![fig1]({{ site.url }}/assets/2016-10-25-competition-model/dynamics.png)
 
 The very first thing that I noticed was that $(N_1, N_3)$ pair (and $(N_2, N_4)$ pair) seemed to exhibit a relationship. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
 
@@ -60,7 +60,7 @@ $$
 
 Indeed, you can see that the path of $(N_1, N_3)$ and $(N_2, N_4)$ pairs lie on hyperbola, $f(x) = c/x$, where $c$ is determined by the initial values.
 
-![fig2]({{ site.url }}/assets/2016-10-24-competition-model/phase.png)
+![fig2]({{ site.url }}/assets/2016-10-25-competition-model/phase.png)
 
 Now, we want to look at the eigenvalues. Following May and Leonard's approach, my first instinct was to linearize the model at the four-species equilibrium $(1, 1, 1, 1)/(1 + \alpha + \beta + \gamma)$: 
 
@@ -84,6 +84,7 @@ N_4
 $$
 
 Since we have a [circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), we can easily find that the it has the following eigenvalues:
+
 $$
 \begin{cases}
 \lambda_1 = 1 + \alpha + \beta + \gamma \\
@@ -91,13 +92,5 @@ $$
 \lambda_{3,4} = (1 - \beta) \pm (\alpha - \gamma) i \\
 \end{cases}
 $$
-When $\beta = 1$, we get purely imaginary eigenvalues, which should explain the cycle. However, if we look at the first figure, the system clearly doesn't oscillate around the four-species equilibrium.
 
-We actually have a special case here that satisfies the following condition: $\alpha + \gamma = 1 + \beta$. When this condition is satisfied, we have infinitely many equilibrium points:
-$$
-(ax, (1-xa), ax, (1-ax)),
-$$
-where $a = 1 + \beta = \alpha + \gamma$ and $0 \leq x \leq 1/a$. 
-
-If we have so many fixed points, how do we know which point the system oscillates around? I don't have a mathematical proof for this but here's my guess. We found out that the trajectories of the paired states will each lie on a hyperbola that is solely determined by the initial values.
-
+When $\beta = 1$, we get purely imaginary eigenvalues, which should explain the cycle. However, if we look at the first figure, it doesn't look like the system oscillates around the four-species equilibrium. So what's going on? Well, I haven't figured it out yet. Perhaps looking at it in a higher dimension will help us understand what's going on, and hopefully I can come up with a clearer geometric interpretation of the model.
