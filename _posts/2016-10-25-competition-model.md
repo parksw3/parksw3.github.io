@@ -3,7 +3,7 @@ layout: post
 title: "Competition model"
 ---
 
-For Math 3MB3, introduction to modeling course, my group has to study [three-competitors model](http://epubs.siam.org/doi/abs/10.1137/0129022), and I really didn't feel like studying for midterms so I decided to play around with the model for a bit last weekend. I was especially interested in the cyclic behaviour of the model so I wanted to see if it could be found in $n$-competitor model as well, where $n > 3$. Naturally, the first thing I did was to work with the next simplest case, $n = 4$:
+For Math 3MB3, introduction to modeling course, my group has to study [three-competitors model](http://epubs.siam.org/doi/abs/10.1137/0129022), and I really didn't feel like studying for midterms so I decided to play around with the model for a bit last weekend. I was especially interested in the cyclic behaviour of the model so I wanted to see if it could be found in $n$-competitors model as well for $n > 3$. So I started working with the next simplest case, $n = 4$:
 
 $$
 \begin{aligned}
@@ -18,7 +18,7 @@ While trying out different parameters, I noticed that this system exhibits a cyc
 
 ![Figure 1]({{ site.url }}/assets/2016-10-25-competition-model/dynamics.png)
 
-The very first thing that I noticed was that $(N_1, N_3)$ pair (and $(N_2, N_4)$ pair) seemed to be related. I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I soon realized that I couldn't. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
+What's particular about this cycle is that $N_1$ and $N_3$ seem to be paired (and so do $N_2$ and $N_4$). I tried swtiching $\beta$ with $\alpha$ (and with $\gamma$) such that $\beta + \alpha = 2$ and $\gamma = 1$ to see if I can pair $N_1$ with $N_2$ (and with $N_4$) but I couldn't get it to work. Looking at the equations, I should have noticed that it wouldn't work, but instead I went on to figure out what was going on.
 
 Before we talk about eigenvalues, let's look at how the system behaves when $\alpha + \gamma = 2$ and $\beta = 1$. Similar to three-comeptitors model, taking the sum of all four states, $N_T \equiv N_1 + N_2 + N_3 + N_4$, yields following equation:
 
@@ -83,7 +83,7 @@ N_4
 \end{pmatrix}
 $$
 
-Since we have a [circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), we can easily find that the it has the following eigenvalues:
+Since we have a [circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), we can easily find its eigenvalues:
 
 $$
 \begin{cases}
@@ -93,9 +93,12 @@ $$
 \end{cases}
 $$
 
-When $\beta = 1$, we get purely imaginary eigenvalues, which should explain the cycle. However, if we look at the first figure, it doesn't look like the system oscillates around the four-species equilibrium. So what's going on?
+When $\beta = 1$, we get purely imaginary eigenvalues, which should explain the cycle. However, if we look at the first figure, it doesn't really look like the system oscillates around the four-species equilibrium. So what's going on?
 
 I thought about it for a while but I don't have an explanation yet. So I'm going to end the post here and go think about it more. Hopefully, I can figure something out. It will also be interesting to think about these things:
 
-* Come up with a clearer geometric interpretation of the model.
-* Generalize the idea to $n$-competitors.
+* Gain insight into characteristics of an oscillation, such as amplitude and period.
+* Come up with a clearer geometric interpretation of the behaviour.
+* Generalize the idea to $n$-competitors model.
+
+If you're interested, you can also find the code that were used to produce the figures [here](https://github.com/parksw3/three_competitors_model/blob/master/misc/blog.R).
