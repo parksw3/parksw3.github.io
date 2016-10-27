@@ -11,9 +11,9 @@ permalink:        pretty
 # relative_permalinks: true
 
 # Setup
-title:            Needs a title
-tagline:          'What is this?'
-description:      'A blog about random things.'
+title:            Recurring ideas
+tagline:          'A blog about mathematics'
+description:      'Math nerd does math nerd things.'
 url:              http://parksw3.github.io
 baseurl:          /
 
@@ -24,7 +24,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          0.0.1
+version:          1.0.0
 
 github:
   repo:           https://github.com/parksw3/parksw3.github.io
