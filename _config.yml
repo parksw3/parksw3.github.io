@@ -16,7 +16,6 @@ tagline:          'A blog about mathematics'
 description:      'Too much to think about'
 url:              http://parksw3.github.io
 baseurl:          /
-atom:             atom.xml
 
 author:
   name:           'Sang Woo Park'
