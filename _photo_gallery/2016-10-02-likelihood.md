@@ -1,6 +1,6 @@
 ---
 image_path: /images/likelihood.png
-title: "Period of cycles"
+title: "Likelihood surface"
 ---
 
 I'm still trying to figure this out...
