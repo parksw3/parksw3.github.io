@@ -23,6 +23,12 @@ author:
 
 paginate:         5
 
+# collection
+
+collections:
+  photo_gallery:
+    output: true
+
 # Custom vars
 version:          1.2.2
 
