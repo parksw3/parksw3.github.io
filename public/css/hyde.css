@@ -36,7 +36,7 @@ html {
 }
 @media (min-width: 48em) {
   html {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 @media (min-width: 58em) {
@@ -80,7 +80,7 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: "Georgia", serif;
-  font-size: 2.63rem;
+  font-size: 2.33rem;
 }
 
 /* Sidebar nav */
@@ -89,7 +89,7 @@ html {
 }
 .sidebar-nav-item {
   display: block;
-  line-height: 1.75;
+  line-height: 1.55;
 }
 a.sidebar-nav-item:hover,
 a.sidebar-nav-item:focus {
@@ -128,7 +128,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 48em) {
   .content {
-    max-width: 54rem;
+    max-width: 50rem;
     margin-left: 20rem;
     margin-right: 2rem;
   }
