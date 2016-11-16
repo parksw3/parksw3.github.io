@@ -26,6 +26,8 @@
         {% endif %}
       {% endfor %}
 
+
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="{{ site.url }}/gallery">Gallery</a>
       <a class="sidebar-nav-item" href="{{ site.url }}/atom.xml">Subscribe to feed</a>
       <a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub</a>
       <span class="sidebar-nav-item">Currently under development: {{ site.version }}</span>

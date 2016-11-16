@@ -1,11 +1,12 @@
 ---
-layout: default
+layout: default2
 ---
 
 <ul class="gallery">
-  {% for image in site.photo_gallery %}
-    <a href="{{ image.url | prepend: site.baseurl }}">
+  {% for image in site.photo_gallery reversed %}
+    <h>
       <img src="{{ image.image_path }}" alt="{{ image.title }}"/>
-    </a>
+      <span class="image-date">{{ image.date | date_to_string }}</span>
+    </h>
   {% endfor %}
 </ul>
