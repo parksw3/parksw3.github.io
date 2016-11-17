@@ -3,4 +3,4 @@ image_path: /images/likelihood.png
 title: "Likelihood surface"
 ---
 
-I'm still trying to figure this out...
+Likelihood surface of 100 simulated data sets.
