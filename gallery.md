@@ -3,7 +3,7 @@ layout: page
 title: aRt gallery
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. In in lorem et nisi dictum dictum vel sed mauris. Praesent efficitur pulvinar interdum. Integer ac egestas lectus. Suspendisse placerat auctor risus ac imperdiet. Etiam semper lorem ut elit mattis, sed molestie orci sagittis. Fusce urna orci, ornare eget nisl sed, ultricies commodo dui. Nunc ligula ex, aliquet et luctus vel, aliquet sit amet magna. Inspired by this [blog](http://accidental-art.tumblr.com/)
+I enjoy making figures with [R](https://www.r-project.org/), especially using `ggplot2` package. Some of these figures will serve as an extension to blog posts, but most of them will be derived from different things I'm working on. This page was inspired by [accidental aRt](http://accidental-art.tumblr.com/).
 
 <ul class="gallery">
   {% for image in site.photo_gallery reversed %}
