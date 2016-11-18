@@ -3,7 +3,7 @@ layout: page
 title: aRt gallery
 ---
 
-I enjoy making figures using [R](https://www.r-project.org/), especially with `ggplot2` package. This page contains images that I found interesting. Some of these will serve as mini blog posts or as extensions to existing blog posts. Most of the figures are be derived from different projects I'm working on, but they may not have much meaning. This page was inspired by [accidental aRt](http://accidental-art.tumblr.com/).
+I enjoy making figures using [R](https://www.r-project.org/), especially with `ggplot2` package. This page contains some of the images that I found interesting. Some of these will serve as mini blog posts or as extensions to existing blog posts. Most of the figures are derived from different projects I'm working on, and some of them might be [accidental aRt](http://accidental-art.tumblr.com/).
 
 <ul class="gallery">
   {% for image in site.photo_gallery reversed %}
