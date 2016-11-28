@@ -9,13 +9,13 @@ f <- function(x){
         x[1] * x[2] + (-4 + 4 * x[2]^2) * x[2]^2
 }
 
-surface <- emdbook::curve3d(f(c(x,y)),
+surface0 <- emdbook::curve3d(f(c(x,y)),
     xlim = c(-2, 2),
     ylim = c(-1, 1),
     n = 81,
     sys3d = "none")
 
-wireframe <- with(surface,{
+wireframe <- with(surface0,{
     lattice::wireframe(z, row.values = x, col.values = y,
         xlab = expression(x[1]),
         ylab = expression(x[2]),
@@ -28,7 +28,7 @@ wireframe <- with(surface,{
         par.box = c(col = "transparent"))
 })
 
-contour <- surface %>%
+contour <- surface0 %>%
     with({
         m <- matrix(z, ncol = length(x))
         dimnames(m) <- list(x, y)
