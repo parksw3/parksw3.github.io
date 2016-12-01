@@ -145,12 +145,10 @@ g.default <- ggplot(NULL, aes(x1, x2)) +
         axis.ticks = element_blank(),
         axis.title.y = element_text(angle=0))
 
-g.contour <- g.default + 
+g.default + 
     geom_polygon(data = triCamel, aes(group = tri), fill = NA, col = "black") +
     scale_x_continuous(expand = c(0, 0), limits = c(-1.6, 0.8), name = expression(x[1])) +
     scale_y_continuous(expand = c(0, 0), limits = c(-1.1, -0.15), , name = expression(x[2]))
-    
-ggsave("camel_path.png", g.contour, width = 8, height = 4, dpi = 600)
 ```
 
 ![Camel_path](/assets/2016-11-26-visualizing-optimization/camel_path.png)

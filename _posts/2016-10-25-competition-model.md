@@ -70,7 +70,7 @@ N_1\\
 N_2\\
 N_3\\
 N_4
-\end{pmatrix} = - \frac{1}{1 + \alpha + \beta + \gamma} \begin{pmatrix}
+\end{pmatrix} = - \frac{1}{1 + \alpha + \beta + \gamma} \left( \begin{pmatrix}
 1 & \alpha & \beta & \gamma\\
 \gamma & 1 & \alpha & \beta\\
 \beta & \gamma & 1 & \alpha\\
@@ -80,7 +80,12 @@ N_1\\
 N_2\\
 N_3\\
 N_4
-\end{pmatrix}
+\end{pmatrix} - \begin{pmatrix}
+1\\
+1\\
+1\\
+1
+\end{pmatrix}\right)
 $$
 
 Since we have a [circulant matrix](https://en.wikipedia.org/wiki/Circulant_matrix), we can easily find its eigenvalues:
