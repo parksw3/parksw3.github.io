@@ -9,7 +9,7 @@ Course notes
 ###### Mathematics:
 
 * Math 2C03 - Introducion to Differential Equations. \[[pdf](/assets/archive/course_notes/math_2c03_lecture_notes.pdf)\]
-* Math 2XX3 - Advanced Calculus II.
+* Math 2XX3 - Advanced Calculus II. \[[pdf](/assets/archive/course_notes/math_2xx3_lecture_notes.pdf)\]
 * Math 3Q03 - Numerical Explorations. \[[pdf](/assets/archive/course_notes/math_3q03_lecture_notes.pdf)\]
 
 ###### Statistics:
