@@ -64,7 +64,7 @@ nest_while
 `nest_while` is very similar to `nest`. It applies the function recursively until the condition is satisfied. For example, suppose we want to find a root of the following function:
 
 $$
-f(x) = x^5 - 4 x^3 + 149
+f(x) = x^5 - 4 x^3 + 159
 $$
 
 Using `nest_while`, we can easily implement the [Secant method](https://en.wikipedia.org/wiki/Secant_method), one of many root finding algorithms:
