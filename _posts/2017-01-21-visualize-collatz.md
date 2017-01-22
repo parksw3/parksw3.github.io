@@ -67,7 +67,7 @@ $$
 f(x) = x^5 - 4 x^3 + 149
 $$
 
-Using `nest_while`, we can easily implement [Secant method](https://en.wikipedia.org/wiki/Secant_method), one of many root finding algorithms:
+Using `nest_while`, we can easily implement the [Secant method](https://en.wikipedia.org/wiki/Secant_method), one of many root finding algorithms:
 
 ```r
 f <- function(x) x^5 - 4 * x^3 + 159
