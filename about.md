@@ -12,7 +12,7 @@ I enjoy solving various math problems. and I'm interested in understanding biolo
 
 I use R most of the time, but I try to code with [Aheui](https://esolangs.org/wiki/Aheui) occasionally.
 
-This is my personal blog and I will be writing about any math and R related contents that I found interesting.
+This is my personal blog and I will be writing about any math and R related contents that I find interesting.
 
 This blog is powered by [Jekyll](https://jekyllrb.com/) and is based on [Hyde](http://hyde.getpoole.com/).
 
