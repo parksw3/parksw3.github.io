@@ -6,7 +6,7 @@ title: About
 Who am I?
 ----
 
-My name is Sang Woo Park and I'm an undergraduate student studying mathematics and statistics at McMaster University.
+My name is Daniel Park and I'm an undergraduate student studying mathematics and statistics at McMaster University.
 
 I enjoy solving various math problems and I'm interested in understanding biology using mathematical tools. My research mostly focuses on infectious disease modeling and evolutionary biology.
 
