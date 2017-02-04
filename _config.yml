@@ -23,8 +23,10 @@ author:
 
 paginate:         5
 
-# collection
+# google analytics
+google_analytics: UA-91336991-1
 
+# collection
 collections:
   photo_gallery:
     output: true
