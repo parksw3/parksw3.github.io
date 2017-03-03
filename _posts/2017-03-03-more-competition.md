@@ -17,7 +17,7 @@ $$
 Given $r_1, r_2, y_1(0), y_2(0)$, is it possible to derive an analytical expression for the ratio of the sizes of the two competing populations at equilibrium?
 </p>
 
-Although this _seems_ like a simple problem, it turns out that finding an analytical expression for the equilibrium sizes is not possible.
+Although this _seems_ like a simple problem, it turns out that finding analytical expressions for the equilibrium sizes is not possible.
 To attempt to find the equilibrium size of each population, we can first go through some algebraic manipulation to obtain:
 
 $$
