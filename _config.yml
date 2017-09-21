@@ -14,8 +14,8 @@ permalink:        pretty
 title:            Recurring ideas
 tagline:          'A blog about mathematics'
 description:      'Using as an archive for now'
-url:              http://parksw3.github.io/archive
-baseurl:          /
+url:              http://parksw3.github.io
+baseurl:          /archive
 
 author:
   name:           'Sang Woo Park'
