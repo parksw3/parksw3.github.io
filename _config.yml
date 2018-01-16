@@ -1,37 +1,5 @@
-# Dependencies
-gems:             [jekyll-paginate]
-markdown:         kramdown
-highlighter:      rouge
-
-# Force UTF-8:
-encoding: UTF-8
-
-# Permalinks
-permalink:        pretty
-# relative_permalinks: true
-
-# Setup
-title:            ...
-tagline:          'A blog about mathematics'
-description:      'Using as an archive for now'
-url:              http://parksw3.github.io
-baseurl:          /
-
-author:
-  name:           'Sang Woo Park'
-
-paginate:         5
-
-# google analytics
-google_analytics: UA-91336991-1
-
-# collection
-collections:
-  photo_gallery:
-    output: true
-
-# Custom vars
-version:          1.3.3
-
-github:
-  repo:           https://github.com/parksw3/parksw3.github.io
+title: Slate theme
+description: Slate is a theme for GitHub Pages.
+show_downloads: true
+google_analytics:
+theme: jekyll-theme-slate
