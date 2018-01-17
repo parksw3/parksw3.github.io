@@ -13,6 +13,8 @@ Notes
 
 * Math 3GR3 - Abstract Algebra. \[[pdf](https://parksw3.github.io/course_notes/math_3gr3_lecture_notes.pdf)\]
 
+* Math 3T03 - Topology. \[[pdf](https://parksw3.github.io/course_notes/math_3t03_lecture_notes.pdf)\]
+
 ##### Statistics:
 
 * Stats 3U03 - Stochastic Processes. \[[pdf](https://parksw3.github.io/course_notes/stats_3u03_lecture_notes.pdf)\]
