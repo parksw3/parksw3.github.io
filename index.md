@@ -2,7 +2,7 @@
 layout: default
 ---
 
-Hi.
+I'm interested in various ecological processes.
 
 Notes
 ---
@@ -22,8 +22,8 @@ Notes
 Publication
 ----
 
-* __Park, S.W.__, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models. \textit{Proceedings of the National Academy of Sciences}.
+* __Park, S.W.__, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models. _Proceedings of the National Academy of Sciences_.
 
-* __Park, S.W.__, and Bolker, B.M., 2017. Effects of contact structure on the transient evolution of HIV virulence. \textit{PLoS Computational Biology}, 13(3): e1005453.
+* __Park, S.W.__, and Bolker, B.M., 2017. Effects of contact structure on the transient evolution of HIV virulence. _PLoS Computational Biology_, 13(3): e1005453.
 
-* Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., __Park, S.W.__, Rawart, S., and Cameron, C.E., 2017. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?. \textit{Sexually Transmitted Infections}.
+* Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., __Park, S.W.__, Rawart, S., and Cameron, C.E., 2017. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?. _Sexually Transmitted Infections_.
