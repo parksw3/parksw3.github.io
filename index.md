@@ -22,6 +22,8 @@ Notes
 Publication
 ----
 
-* Sang Woo Park and Benjamin M. Bolker. Effects of contact structure on the transient evolution of HIV virulence. *PLoS Computational Biology*, 13(3): e1005453, 2017.
+* \textbf{Park, S.W.}, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models. \textit{Proceedings of the National Academy of Sciences}.
 
-* Michael L. Rekart, Wilfred Ndifon, Robert C. Brunham, Jonathan Dushoff, Sang Woo Park, Sanjana Rawat, and Caroline E. Cameron. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?. *Sexually Transmitted Infections*, 2017.
+* \textbf{Park, S.W.}, and Bolker, B.M., 2017. Effects of contact structure on the transient evolution of HIV virulence. \textit{PLoS Computational Biology}, 13(3): e1005453.
+
+* Rekart, M.L., Ndifon, W., Brunham, R.C., Dushoff, J., \textbf{Park. S.W.}, Rawart, S., and Cameron, C.E., 2017. A double-edged sword: does highly active antiretroviral therapy contribute to syphilis incidence by impairing immunity to Treponema pallidum?. \textit{Sexually Transmitted Infections}.
