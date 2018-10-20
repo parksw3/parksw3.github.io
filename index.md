@@ -19,7 +19,7 @@ Notes
 
 * Stats 3U03 - Stochastic Processes. \[[pdf](https://parksw3.github.io/course_notes/stats_3u03_lecture_notes.pdf)\]
 
-Publication
+Publications
 ----
 
 * __Park, S.W.__, Dushoff, J., Earn, D.J.D., Poinar, H., and Bolker, B.M., 2018. Human ectoparasite transmission of the plague during the Second Pandemic is only weakly supported by proposed mathematical models. _Proceedings of the National Academy of Sciences_.
